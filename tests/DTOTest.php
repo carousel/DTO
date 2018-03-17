@@ -65,7 +65,7 @@ class DTOTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals($this->dto->myUsername,'Miroslav Trninic');
     }
     /**
-     * Return only single value (not modified)
+     * Value can be appended to request
      *
      * @test
      */
@@ -73,6 +73,18 @@ class DTOTest extends \PHPUnit\Framework\TestCase
     {
         $appended = $this->dto->append(['role' => 'admin']);
         $this->assertTrue(array_key_exists('role', $appended));
+    }
+    /**
+     * Request array can be serialized
+     *
+     * @test
+     */
+    public function requestCanBeSerialized()
+    {
+        $serialized = $this->dto->serialize();
+        $this->assertTrue(gettype($serialized) == 'string');
+        $unserialized = unserialize($serialized);
+        $this->assertTrue(array_key_exists('my_timezone', $unserialized));
     }
 
 }
