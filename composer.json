@@ -1,18 +1,18 @@
 {
-    "name": "carousel/DTO",
+    "name": "carousel/dto",
     "type": "library",
     "description": "PHP DTO",
     "keywords": [
         "carousel",
         "DTO"
     ],
-    "homepage": "https://github.com/carousel/DTO",
+    "homepage": "https://github.com/carousel/dto",
     "license": "MIT",
     "authors": [
         {
             "name": "Miroslav Trninic",
             "email": "miroslav.trninic@gmail.com",
-            "homepage": "https://github.com/carousel/DTO",
+            "homepage": "https://github.com/carousel/dto",
             "role": "Developer"
         }
     ],
