@@ -32,15 +32,12 @@ class DTOClass
             // if the exact key exists in the top-level, remove it
             if ($this->exists($key)) {
                 unset($this->request[$key]);
-
                 continue;
             }
 
             $parts = explode('.', $key);
-
             // clean up before each pass
             $array = &$original;
-
             while (count($parts) > 1) {
                 $part = array_shift($parts);
 
