@@ -6,7 +6,7 @@ class DTOTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * Set up DTO instance
-     * Prepare request data
+     * Prepare request data for testing
      */
     public function setUp()
     {
