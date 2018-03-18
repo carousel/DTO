@@ -15,13 +15,11 @@ class DTOClass
     public function except($keys)
     {
         $this->forget($keys);
-
         return $this->request;
     }
     public function forget($keys)
     {
         $original = &$this->request;
-
         $keys = (array) $keys;
 
         if (count($keys) === 0) {
