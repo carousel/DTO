@@ -2,6 +2,7 @@
     "name": "carousel/dto",
     "type": "library",
     "description": "PHP DTO",
+    "minimum-stability": "dev",
     "keywords": [
         "carousel",
         "DTO"
